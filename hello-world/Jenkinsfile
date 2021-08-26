@@ -9,6 +9,7 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'Compile the source code' 
+                echo 'Compiler running'
             }
         }
         stage('Security Check') {
@@ -24,6 +25,7 @@ pipeline {
         stage('Run Integration Tests') {
             steps {
                 echo 'Run only crucial integration tests from the source code' 
+                echo 'Integration Test running'
             }
         }
         stage('Publish Artifacts') {
